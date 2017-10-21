@@ -8,7 +8,7 @@
       <class name="executionEngine.LoginTest">
         <methods>
           <include name="beforeMethod"/>
-          <include name="mobileApp_BlankPassword"/>
+          <include name="mobileApp_Login" invocation-numbers="0"/>
         </methods>
       </class> <!-- executionEngine.LoginTest -->
     </classes>

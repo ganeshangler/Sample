@@ -66,6 +66,7 @@ public class LoginAction {
 		loginPage.password(driver).clear();
 		loginPage.userName(driver).sendKeys(username);
 		loginPage.SignIn(driver).click();
+		Thread.sleep(15000);
 		if (homePage.HandBurgerMenu(driver).isDisplayed()){
 			return TEST_RESULT.RESULT_FAILURE;
 		}
@@ -78,12 +79,13 @@ public class LoginAction {
 
 	}
 
-	public static TEST_RESULT blankUserName(WebDriver driver, String errAlert,String password) throws Exception {
+	public static TEST_RESULT blankUserName(WebDriver driver, String password,String errAlert) throws Exception {
 		loginPage.userName(driver).clear();
 		loginPage.password(driver).clear();
 		loginPage.password(driver).sendKeys(password);
 		loginPage.SignIn(driver).click();
 		String Actual_Alert = loginPage.Password_Err_Msg(driver).getText();
+		System.out.println(Actual_Alert);
 		if (Actual_Alert.equals(errAlert)){
 			return TEST_RESULT.RESULT_SUCCESS;
 			
@@ -101,8 +103,8 @@ public class LoginAction {
 		
 		loginPage.userName(driver).sendKeys(username);
 		loginPage.SignIn(driver).click();
-		System.out.println("Error Alert"+errAlert);
 		String Actual_Alert = loginPage.Password_Err_Msg(driver).getText();
+		System.out.println(Actual_Alert);
 		if (Actual_Alert.equals(errAlert)){
 			System.out.println("errAlert"+errAlert);
 			return TEST_RESULT.RESULT_SUCCESS;

@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="85909" started-at="2017-10-21T10:26:15Z" finished-at="2017-10-21T10:27:41Z">
+  <suite name="Suite" duration-ms="78528" started-at="2017-10-21T12:27:40Z" finished-at="2017-10-21T12:28:59Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="85909" started-at="2017-10-21T10:26:15Z" finished-at="2017-10-21T10:27:41Z">
+    <test name="Test1" duration-ms="78528" started-at="2017-10-21T12:27:40Z" finished-at="2017-10-21T12:28:59Z">
       <class name="executionEngine.LoginTest">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:executionEngine.LoginTest@3c0ecd4b]" name="beforeMethod" is-config="true" duration-ms="10169" started-at="2017-10-21T15:56:15Z" finished-at="2017-10-21T15:56:25Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:executionEngine.LoginTest@3c0ecd4b]" name="beforeMethod" is-config="true" duration-ms="10357" started-at="2017-10-21T17:57:40Z" finished-at="2017-10-21T17:57:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="mobileApp_BlankPassword()[pri:0, instance:executionEngine.LoginTest@3c0ecd4b]" name="mobileApp_BlankPassword" duration-ms="40554" started-at="2017-10-21T15:56:25Z" finished-at="2017-10-21T15:57:05Z">
+        <test-method status="PASS" signature="mobileApp_BlankPassword()[pri:0, instance:executionEngine.LoginTest@3c0ecd4b]" name="mobileApp_BlankPassword" duration-ms="17175" started-at="2017-10-21T17:57:51Z" finished-at="2017-10-21T17:58:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mobileApp_BlankPassword -->
-        <test-method status="PASS" signature="mobileApp_BlankUserName()[pri:1, instance:executionEngine.LoginTest@3c0ecd4b]" name="mobileApp_BlankUserName" duration-ms="13" started-at="2017-10-21T15:57:05Z" finished-at="2017-10-21T15:57:05Z">
+        <test-method status="PASS" signature="mobileApp_BlankUserName()[pri:1, instance:executionEngine.LoginTest@3c0ecd4b]" name="mobileApp_BlankUserName" duration-ms="13365" started-at="2017-10-21T17:58:08Z" finished-at="2017-10-21T17:58:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mobileApp_BlankUserName -->
-        <test-method status="FAIL" signature="mobileApp_Login(java.lang.String, java.lang.String)[pri:2, instance:executionEngine.LoginTest@3c0ecd4b]" name="mobileApp_Login" duration-ms="35126" started-at="2017-10-21T15:57:05Z" finished-at="2017-10-21T15:57:41Z">
+        <test-method status="FAIL" signature="mobileApp_Login(java.lang.String, java.lang.String)[pri:2, instance:executionEngine.LoginTest@3c0ecd4b]" name="mobileApp_Login" duration-ms="37589" started-at="2017-10-21T17:58:21Z" finished-at="2017-10-21T17:58:59Z">
           <params>
             <param index="0">
               <value>
@@ -35,24 +35,24 @@
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 15.41 seconds
+Command duration or timeout: 15.21 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.3.1', revision: '5234b32', time: '2017-03-10 09:04:52 -0800'
 System info: host: 'ANGLER94', ip: '192.168.10.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
 Capabilities [{networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=192.168.10.101:5555, platform=LINUX, desired={platformVersion=4.4.4, browserName=Android, unicodeKeyboard=true, platformName=Android, deviceName=Custom Phone - 4.4.4 API 19 - 768*1280, resetKeyboard=true}, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, unicodeKeyboard=true, platformName=Android, resetKeyboard=true}]
-Session ID: 29455901-79ec-489f-bc0a-2076ffb54f9c
+Session ID: d4c5544b-507b-4d2a-9678-270659b4acec
 *** Element info: {Using=xpath, value=//android.widget.ImageButton[0]}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 15.41 seconds
+Command duration or timeout: 15.21 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.3.1', revision: '5234b32', time: '2017-03-10 09:04:52 -0800'
 System info: host: 'ANGLER94', ip: '192.168.10.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
 Capabilities [{networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=192.168.10.101:5555, platform=LINUX, desired={platformVersion=4.4.4, browserName=Android, unicodeKeyboard=true, platformName=Android, deviceName=Custom Phone - 4.4.4 API 19 - 768*1280, resetKeyboard=true}, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, unicodeKeyboard=true, platformName=Android, resetKeyboard=true}]
-Session ID: 29455901-79ec-489f-bc0a-2076ffb54f9c
+Session ID: d4c5544b-507b-4d2a-9678-270659b4acec
 *** Element info: {Using=xpath, value=//android.widget.ImageButton[0]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -67,7 +67,7 @@ Session ID: 29455901-79ec-489f-bc0a-2076ffb54f9c
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
 	at pageObjects.homePage.HandBurgerMenu(homePage.java:17)
 	at appModules.LoginAction.ValidLogin(LoginAction.java:52)
-	at executionEngine.LoginTest.mobileApp_Login(LoginTest.java:25)
+	at executionEngine.LoginTest.mobileApp_Login(LoginTest.java:22)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -100,6 +100,6 @@ Session ID: 29455901-79ec-489f-bc0a-2076ffb54f9c
           </reporter-output>
         </test-method> <!-- mobileApp_Login -->
       </class> <!-- executionEngine.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Suite -->
 </testng-results>
