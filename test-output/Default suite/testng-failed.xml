@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <parameter name="password" value="Eosouthasia@17"/>
+  <parameter name="username" value="jayanthra@gmail.com"/>
+  <test name="Default test(failed)">
+    <classes>
+      <class name="executionEngine.LoginTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="mobileApp_Login" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- executionEngine.LoginTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
