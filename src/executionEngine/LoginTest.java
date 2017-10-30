@@ -14,9 +14,10 @@ import appModules.LoginAction.TEST_RESULT;
 import utility.ExcelUtils;
 import config.Constants;
 
-public class LoginTest extends appConfig {
-	@Test(priority = 2)
+public class LoginTest extends appConfigTest {
+	
 	@Parameters({ "username", "password" })
+	@Test(priority = 2)
 	public void mobileApp_Login(String username, String password)throws Exception {
 		driver.manage().timeouts().implicitlyWait(45, TimeUnit.SECONDS);
 		TEST_RESULT result = appModules.LoginAction.ValidLogin(driver, username, password);

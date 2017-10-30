@@ -1,16 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="Test1(failed)">
-    <parameter name="password" value="Eosouthasia@17"/>
-    <parameter name="username" value="jayanthra@gmail.com"/>
+<suite name="Failed suite [Suite]">
+  <test name="Test(failed)">
     <classes>
+      <class name="SouthAsia.Login">
+        <methods>
+          <include name="mobileApp_Login"/>
+        </methods>
+      </class> <!-- SouthAsia.Login -->
+      <class name="SouthAsia.EONews">
+        <methods>
+          <include name="mobileApp_Login"/>
+          <include name="mobileApp_News"/>
+          <include name="mobileApp_EOPage"/>
+          <include name="mobileApp_ActivityFeeds"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- SouthAsia.EONews -->
       <class name="executionEngine.LoginTest">
         <methods>
-          <include name="beforeMethod"/>
-          <include name="mobileApp_Login" invocation-numbers="0"/>
+          <include name="mobileApp_BlankUserName"/>
+          <include name="mobileApp_BlankPassword"/>
+          <include name="mobileApp_Login"/>
         </methods>
       </class> <!-- executionEngine.LoginTest -->
+      <class name="SouthAsia.LoginEO">
+        <methods>
+          <include name="mobileApp_Login"/>
+          <include name="mobileApp_ActivityFeed"/>
+          <include name="mobileApp_EOPage"/>
+        </methods>
+      </class> <!-- SouthAsia.LoginEO -->
     </classes>
-  </test> <!-- Test1(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

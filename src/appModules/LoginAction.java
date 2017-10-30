@@ -58,7 +58,6 @@ public class LoginAction {
 		else{
 			return TEST_RESULT.RESULT_ERROR;
 		}
-
 	}
 
 	public static TEST_RESULT ValidUser(WebDriver driver, String username,String password) throws Exception {

@@ -17,4 +17,10 @@ public class homePage {
     	element = driver.findElement(parser.getLocator("Home_HBurgerMenu"));
     	return element;
 	}
+	public static WebElement HBMenu_RegCouncil (WebDriver driver) throws Exception
+	{
+		parser.RepositoryParser(Constants.path_ObjectRepo);
+    	element = driver.findElement(parser.getLocator("sideBar_RegCouncil"));
+    	return element;
+	}
 }

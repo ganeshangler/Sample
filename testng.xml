@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><suite name="Suite" junit="false" parallel="none" guice-stage="DEVELOPMENT" configfailurepolicy="skip" thread-count="5" skipfailedinvocationcounts="false" data-provider-thread-count="10" group-by-instances="false" preserve-order="true" allow-return-values="false">
+  <test name="Test" junit="false" skipfailedinvocationcounts="false" preserve-order="true" group-by-instances="false" allow-return-values="false">
+  <parameter name="username" value="jayanthra@gmail.com"/>
+  <parameter name="password" value="Eosouthasia@17"/>
+    <classes>
+			<class name="executionEngine.LoginTest">
+			</class>
+			</classes>
+  </test> <!-- Test -->
+</suite><!-- Suite -->
