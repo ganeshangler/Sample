@@ -1,5 +1,8 @@
 package executionEngine;
 
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
@@ -7,12 +10,13 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class appConfig {
+public class appConfigTest {
 protected WebDriver driver;
 //@Parameters({ "deviceName_","UDID_","platformVersion_", "URL_" })
 @BeforeClass
@@ -39,5 +43,13 @@ public void beforeMethod() throws MalformedURLException, InterruptedException {
 public void mobileApp_Login(String username, String password) throws Exception  {
 	driver.manage().timeouts().implicitlyWait(45, TimeUnit.SECONDS);
 	appModules.LoginAction.ValidLogin(driver, username, password);
+}
+@AfterClass
+public void signOut() throws Exception{
+	
+	appModules.logOutAction.logOut(driver);
+	
+	
+	
 }
 }
